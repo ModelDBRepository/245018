@@ -1,0 +1,33 @@
+<html>
+This is the readme for the models associated with the paper:<br/>
+Zannone S, Brzosko Z, Paulsen O, Clopath C (2018) Acetylcholine-modulated plasticity in reward-driven navigation: a computational study. Sci Rep 8:9486
+<br/>
+<a href="http://dx.doi.org/10.1038/s41598-018-27393-2">http://dx.doi.org/10.1038/s41598-018-27393-2</a>
+<p/>
+This matlab code was contributed by S Zannone.
+<p/>
+Instructions to run the model: 
+<p/>
+The file seq_neuromod_plasticity.m is needed to run the plasticity
+rules called +ACh and -ACh (the presence or absence of acetylcholine
+can be decided with the flag ACh_flag). This is needed for Figures 2,
+3 and 4. This is the bit of the code that partially overlaps with the
+elife paper:<p/>
+Brzosko Z, Zannone S, Schultz W, Clopath C, Paulsen O (2017) Sequential neuromodulation of Hebbian plasticity offers mechanism for effective reward-based navigation. Elife
+<br/><a href="http://dx.doi.org/10.7554/eLife.27756">http://dx.doi.org/10.7554/eLife.27756</a>
+<br/>Note: ModelDB accession number <a href="http://modeldb.yale.edu/233396">233396</a> has the same code with a different readme. 
+<p/>
+The same file, however, can be also used to run
+simulations of the r-STDP rule by setting ACh_flag = 0 and changing
+the STDP parameters (A_pre_post = pre-post window amplitude,
+A_post_pre = post-pre window amplitude, tau_pre_post = pre-post window
+time constant, tau_post_pre = post-pre window time constan). This is
+needed to reproduce Figure 5.
+
+<p/>The file dynamic_reward_signal.m was
+used for Figure 6 and negative_feedback_signal.m is for Figure 7.
+<p/>
+Here is a sample screenshot from running negative_feedback_signal which displays trials 1-40 results as they run:
+<p/>
+<img src="images/screenshot.png" width="750">
+</html>
